@@ -15,6 +15,6 @@
     "cross-env": "^5.2.0",
     "express": "^4.16.3",
     "graphql-tools": "^3.0.2",
-    "mongoose": "^5.1.6"
+    "mongoose": "^5.2.2"
   }
 }
