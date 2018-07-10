@@ -16,5 +16,8 @@
     "express": "^4.16.3",
     "graphql-tools": "^3.0.5",
     "mongoose": "^5.2.2"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0"
   }
 }
