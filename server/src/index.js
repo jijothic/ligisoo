@@ -8,6 +8,14 @@ import './config/db';
 import constants from './config/constants';
 import typeDefs from './graphql/schema';
 import resolvers from './graphql/resolvers';
+import mocks from './mocks';
+
+const app = express();
+
+const schema = makeExecutableSchema({
+  typeDefs,
+  resolvers,
+});
 
 app.use(bodyParser.json());
 
@@ -20,30 +28,19 @@ app.use(
 
 app.use(
   constants.GRAPHQL_PATH,
-  graphiqlExpress({
-    schema
+  graphqlExpress({
+    schema,
   }),
 );
 
-graphqlServer.listen(constants.PORT, err =>{
-  if (err) {
-    console.error(err);
-  }else{
-    console.log(`App running on port: ${constants.PORT}`);
-  }
-});
+const graphQLServer = createServer(app);
 
-
-const app = express(); // create an instance of express
-
-const PORT = process.env.PORT || 3000; // create the port
-
-app.use(bodyParser.json()); // add body-parser as the json parser middleware
-
-app.listen(PORT, err => {
-  if (err) {
-    console.error(err);
-  } else {
-    console.log(`App listen on port: ${PORT}`);
-  }
+mocks().then(() => {
+  graphQLServer.listen(constants.PORT, err => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(`App listen to port: ${constants.PORT}`);
+    }
+  });
 });
