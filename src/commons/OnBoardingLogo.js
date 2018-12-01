@@ -13,7 +13,7 @@ const OnBoardingLogo = () => (
         <Text size="2xl">
             Ligi
             <Text color="green" size="2xl">
-                $oo
+                soo
             </Text>
         </Text>
     </Box>

@@ -4,7 +4,7 @@ import { Box, Text } from 'react-native-design-utility';
 import OnBoardingLogo from '../commons/OnBoardingLogo';
 
 class SplashScreen extends Component {
-    state = {  }
+    state = {}
 
     componentDidMount() {
         this.checkAuth();
@@ -12,7 +12,7 @@ class SplashScreen extends Component {
 
     checkAuth = () => {
         // setTimeout(() => {
-            //this.props.navigation.navigate('Auth');
+        //     this.props.navigation.navigate('Auth');
         // }, 1000);
     };
     
