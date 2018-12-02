@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Text } from 'react-native-design-utility';
 import { TouchableOpacity, Image } from 'react-native';
-import { FontAAwesme } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
 
 import { images } from '../constants/images';
 
