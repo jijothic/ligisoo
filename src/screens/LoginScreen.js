@@ -4,6 +4,9 @@ import { TouchableOpacity, Alert, Animated } from 'react-native';
 
 import OnboardingLogo from '../commons/OnboardingLogo';
 import LoginButton from '../commons/LoginButton'; 
+import { FacebookApi } from '../api/Facebook';
+import { GoogleApi } from '../api/Google';
+
 
 const BoxAnimated = Animated.createAnimatedComponent(Box);
 
