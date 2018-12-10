@@ -1,50 +1,51 @@
-import { createStackNavigator, createSwitchNavigator, createBottomTabNavigator } from 'react-navigation'
-import React, { Component } from 'react';
-
-
-const AuthNavigator = createStackNavigator(
+import {
+    createStackNavigator,
+    createSwitchNavigator,
+    createBottomTabNavigator,
+  } from 'react-navigation';
+  import React, { Component } from 'react';
+  
+  const AuthNavigator = createStackNavigator(
     {
-        Login: {
-            getScreen: () => require('./LoginScreen').default,
-        },
+      Login: {
+        getScreen: () => require('./LoginScreen').default,
+      },
     },
     {
-        navigationOptions: {
-            header: null,
-        },
+      navigationOptions: {
+        header: null,
+      },
     },
-);
-
-const TabNavigator = createBottomTabNavigator(
-    {
-        Home: {
-            getScreen: () => require('./HomeScreen').default,
-        },
-});
-
-const MainNavigator = createStackNavigator({
+  );
+  
+  const TabNavigator = createBottomTabNavigator({
+    Home: {
+      getScreen: () => require('./HomeScreen').default,
+    },
+  });
+  
+  const MainNavigator = createStackNavigator({
     Tab: TabNavigator,
-});
-
-const AppNavigator = createSwitchNavigator(
+  });
+  
+  const AppNavigator = createSwitchNavigator(
     {
-        Splash: {
-            getScreen: () => require('./SplashScreen').default,
-        },
-        Auth: AuthNavigator,
-        Main: MainNavigator, 
+      Splash: {
+        getScreen: () => require('./SplashScreen').default,
+      },
+      Auth: AuthNavigator,
+      Main: MainNavigator,
     },
     {
-        initialRouteName: 'Splash',
+      initialRouteName: 'Splash',
     },
-);
-
-class Navigation extends Component {
-    state = {  }
+  );
+  
+  class Navigation extends Component {
+    state = {};
     render() {
-        return <AppNavigator/>;
+      return <AppNavigator />;
     }
-}
-
-export default Navigation;
-
+  }
+  
+  export default Navigation;
