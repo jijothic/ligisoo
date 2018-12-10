@@ -4977,9 +4977,9 @@ react-native-branch@2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/react-native-branch/-/react-native-branch-2.2.5.tgz#4074dd63b4973e6397d9ce50e97b57c77a518e9d"
 
-react-native-design-utility@^0.0.12:
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/react-native-design-utility/-/react-native-design-utility-0.0.12.tgz#ce8db612bf6a07df97378c4820dbf95f8cec27c1"
+react-native-design-utility@^0.0.30:
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/react-native-design-utility/-/react-native-design-utility-0.0.30.tgz#366a2ff7effa66f8f39b7a09c1eb3bbf5c8e093a"
   dependencies:
     fs-extra "^7.0.0"
     lodash.get "^4.4.2"
@@ -6294,7 +6294,11 @@ watch@~0.18.0:
     exec-sh "^0.2.0"
     minimist "^1.2.0"
 
-whatwg-fetch@>=0.10.0, whatwg-fetch@^3.0.0:
+whatwg-fetch@2.0.4:
+  version "2.0.4"
+  resolved "http://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-2.0.4.tgz#dde6a5df315f9d39991aa17621853d720b85566f"
+
+whatwg-fetch@>=0.10.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.0.0.tgz#fc804e458cc460009b1a2b966bc8817d2578aefb"
 

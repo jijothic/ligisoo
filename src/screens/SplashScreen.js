@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Box, Text } from 'react-native-design-utility';
 
-import OnBoardingLogo from '../commons/OnBoardingLogo';
+import OnBoardingLogo from '../commons/OnboardingLogo';
 
 class SplashScreen extends Component {
     state = {}
@@ -11,9 +11,9 @@ class SplashScreen extends Component {
     }
 
     checkAuth = () => {
-        // setTimeout(() => {
-        //     this.props.navigation.navigate('Auth');
-        // }, 1000);
+        setTimeout(() => {
+            this.props.navigation.navigate('Auth');
+        }, 1000);
     };
     
     render() {

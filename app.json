@@ -22,6 +22,8 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "facebookAppId": "368672470377179",
+    "facebookScheme": "fb368672470377179" 
     }
-  }
 }

@@ -4,20 +4,21 @@ import { TouchableOpacity, Image } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 
 import { images } from '../constants/images';
+import { theme } from '../constants/theme';
 
 const bgColor = type => {
-    switch (type) {
-        case 'google':
-            return 'googleBlue';
-        case 'facebook':
-            return 'facebookBlue';
-        default:
-        return 'white';
-    }
+  switch (type) {
+    case 'google':
+      return 'googleBlue';
+    case 'facebook':
+      return 'facebookBlue';
+    default:
+      return 'white';
+  }
 };
 
 const LoginButton = ({ children, type, onPress }) => (
-<TouchableOpacity onPress={onPress}>
+  <TouchableOpacity onPress={onPress}>
     <Box
       dir="row"
       align="center"
@@ -56,6 +57,6 @@ const LoginButton = ({ children, type, onPress }) => (
       </Box>
     </Box>
   </TouchableOpacity>
-)
+);
 
 export default LoginButton;
