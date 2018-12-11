@@ -24,6 +24,13 @@
       "supportsTablet": true
     },
     "facebookAppId": "368672470377179",
-    "facebookScheme": "fb368672470377179" 
+    "facebookScheme": "fb368672470377179",
+    "facebookDisplyName": "ligisoo",
+    "extra": {
+      "googleAppId": {
+        "ios": "370845223292-29ae42q1s48l2ejsqodvgio4bemdl7jt.apps.googleusercontent.com",
+        "android": "370845223292-tgr6tql1jaq706u81en6psmuda5he5mg.apps.googleusercontent.com"
+      }
+    } 
     }
 }
