@@ -5,5 +5,5 @@ import { isDev } from '../constants';
 
 export default app => {
     app.use(morgan(isDev ? 'dev' : 'common'));
-    app.use(express.json());
+    app.use(express.json()); 
 }
