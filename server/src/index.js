@@ -1,6 +1,10 @@
 import { Express } from "express";
 
+import middlewaresConfig from './config/middleware';
+
 const app = express();
+
+middlewaresConfig(app);
 
 app.get('/', (req, res) => {
     res.send('Welcome');
