@@ -1,6 +1,8 @@
-import { Express } from "express";
+import { express } from "express";
 
 import middlewaresConfig from './config/middleware';
+import './config/db';
+
 
 const app = express();
 
