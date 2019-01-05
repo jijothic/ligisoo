@@ -1,9 +1,9 @@
 workflow "New workflow" {
   on = "push"
-  resolves = ["George Mburu Kibaru"]
+  resolves = ["Connect to graphql server"]
 }
 
-action "George Mburu Kibaru" {
+action "Connect to graphql server" {
   uses = "actions/bin/filter@b2bea07"
-  runs = "George Mburu Kibaru"
+  runs = "Droplet server"
 }
